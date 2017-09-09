@@ -3,19 +3,19 @@ header {
 	font-family: Verdana;
 	font-size: 14px;
 	font-weight: bold;
-	border-bottom: 1px solid black;
 	padding: 5px 5px;
 	/* center the items */
 	align-items: center;
 }  
 
 #logo {
-	display: flex; /*without this, #myTimes drops below the logo*/
-	flex-grow: 1; /*This was a cheat from Slack, figure out why this works*/
+	/*without this, #myTimes drops below the logo*/
+	display: flex; 
+
+	/*This was a note from Slack, figure out why this works*/
+	flex-grow: 1; 
+
 	align-items: center;
-
-	border: 1px solid black; /*TEMP REMOVE LATER*/
-
 }
 
 #logoIMG {
@@ -26,7 +26,127 @@ header {
 	color: MediumAquamarine;
 }
 
-#nav1 {
-	display: flex;
+.nav1 {
+	display: inline-flex;
+
+	/*vertical padding 0, horizontal padding ~8px*/
+	padding: 0px 8px;
 	justify-content: space-around;
+	color: black;
+}
+
+
+/*Main Content Container*/
+
+#Content {
+	display: flex;
+	justify-content: space-between;
+}
+
+
+
+
+/*debug container borders*/
+
+.blocky {
+	border: 1px solid black;
+}
+
+
+
+
+/*Columns*/
+
+
+#largeColumn {
+	display: flex;
+
+	/*make it flow vertically*/
+	flex-direction: column;
+
+	width: 630px;
+}
+
+/*lesson on column splitting: 
+https://www.codecademy.com/en/courses/freelance1-u4/lessons/f1-u4-flexbox/exercises/nested-flex?program_content_id=bcb8c7f39a2745b30a99cbe97aab5659&program_id=540f932a8482dd52a34f25e44278e03b*/
+.leftSide {
+
+}
+
+
+
+#mediumColumn {
+	display: flex;
+	flex-direction: column;
+	width: 300px;
+}
+
+#smallColumn {
+	display: flex;
+	flex-direction: column;
+	width: 240px;
+
+}
+
+
+.story {
+	font-family: Georgia;
+	font-size: 17px;
+	color: black;
+}
+/*IMAGES*/
+
+.imageProperties {
+	font-family: Georgia;
+  font-weight: bold;
+  color: white;
+}
+
+.coverFont {
+	display: flex;
+	font-size: 40px;
+	justify-content: flex-start;
+
+}
+.underFont {
+	display: block;
+	font-size: 30px;
+	justify-content: center;
+}
+
+
+#image1 {
+	display: flex;
+
+	/*because style.css is in a lower folder i think it needs an image properly sources, so ./resources/images doesn't exist starting from the style.css folder.... further investigation is needed*/
+	background-image: url(../images/img-story-main.png);
+	height: 300px;
+}
+
+#image2 {
+	display: flex;
+	background-image: url(../images/img-story-2.png);
+	height: 300px;
+}
+
+#image3 {
+	display: flex;
+	background-image: url(../images/img-story-3.png);
+	height: 300px;
+}
+
+#image4 {
+	display: flex;
+	background-image: url(../images/img-story-1.png);
+	height: 300px;
+}
+
+
+#headline2 {
+}
+
+#headline3 {
+}
+
+.articleText {
 }
