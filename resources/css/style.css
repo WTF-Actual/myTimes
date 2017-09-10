@@ -65,7 +65,7 @@ header {
 	display: inline-flex;
 	flex-direction: column;
 	width: 630px;
-	border: 1px solid blue;
+	border: 1px solid white;
 }
 
 .subColumnLEFT {
@@ -96,9 +96,24 @@ header {
 	min-width: 240px;
 }
 
+#NewsBitesTitle {
+	font-size: 16px;
+	font-weight: bold;
+}
+
 #newsbites {
 	display: flex;
 	flex-direction: column;
+}
+
+.biteProps {
+	background-color: WhiteSmoke;
+	font-family: Verdana;
+	font-size: 12px;
+	border-bottom: 1px solid black;
+	color: DimGray;
+	padding: 10px 20px;
+
 }
 
 
@@ -154,14 +169,40 @@ header {
 }
 
 
-#headline2 {
+
+/*FOOTER*/
+
+#footer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: MediumAquamarine;
+	margin: auto;
+	font-family: Verdana;
+	font-size: 12px;
+	height: 600px;
 }
 
-#headline3 {
+#footerProp {
+	display: inline-flex;
 }
 
-.articleText {
+.nav2 {
+	display: inline-flex;
+	color: black;
+	justify-content: space-around;
+	padding: 0px 8px;
+	align-items: center;
 }
+
+.MYTimes {
+	font-family: Georgia;
+	font-size: 16px;
+	font-weight: bold;
+	color: white;
+	padding: 15px;
+}
+
 
 /*debug container borders*/
 .blocky {
