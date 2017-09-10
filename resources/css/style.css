@@ -14,9 +14,9 @@ header {
 }  
 
 #logo {
+	display: flex; 
 	align-items: center;
 	/*without disp:flex, #myTimes drops below the logo*/
-	display: flex; 
 	/*This was a note from Slack, figure out why this works*/
 	flex-grow: 1; 
 }
@@ -41,7 +41,7 @@ header {
 /*Main Content Container*/
 #Content {
 	display: inline-flex;
-	justify-content: space-around;
+	justify-content: center;
 	padding-top: 20px;
 }
 
@@ -64,18 +64,22 @@ header {
 #subColumn {
 	display: inline-flex;
 	flex-direction: column;
-	max-width: 300px;
-	min-width: 300px;
+	width: 630px;
+	border: 1px solid blue;
 }
 
 .subColumnLEFT {
 	display: flex;
 	flex-direction: column;
+	max-width: 300px;
+	min-width: 300px;
 }
 
 .subColumnRIGHT {
 	display: flex;
   flex-direction: column;
+  max-width: 300px;
+	min-width: 300px;
 }
 
 #mediumColumn {
@@ -90,6 +94,11 @@ header {
 	flex-direction: column;
 	max-width: 240px;
 	min-width: 240px;
+}
+
+#newsbites {
+	display: flex;
+	flex-direction: column;
 }
 
 
@@ -109,14 +118,14 @@ header {
   color: white;
 }
 
-.coverFont {
+.picFontAlpha {
 	display: flex;
 	font-size: 40px;
 	justify-content: flex-start;
 
 }
-.underFont {
-	display: block;
+.picFontBeta {
+	display: flex;
 	font-size: 30px;
 	justify-content: center;
 }
