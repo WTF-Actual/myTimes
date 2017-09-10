@@ -1,7 +1,6 @@
 body {
 	margin: 0px;
 }
-
 header {
 	display: flex;
 	font-family: Verdana;
@@ -12,23 +11,17 @@ header {
 	align-items: center;
 	border-bottom: 1px solid black;
 }  
-
-#logo {
+#MYT-logo {
 	display: flex; 
 	align-items: center;
 	/*without disp:flex, #myTimes drops below the logo*/
 	/*This was a note from Slack, figure out why this works*/
 	flex-grow: 1; 
 }
-
-#logoIMG {
-	padding-right: 5px;
-}
-
-#myTimes {
+#text-title {
 	color: MediumAquamarine;
+	padding-left: 8px;
 }
-
 .nav1 {
 	display: inline-flex;
 	/*vertical padding 0, horizontal padding ~8px*/
@@ -38,20 +31,21 @@ header {
 }
 
 
-/*Main Content Container*/
-#Content {
+		/*Main Content Container*/
+
+#MasterContainer {
 	display: inline-flex;
 	justify-content: center;
 	padding-top: 20px;
 }
 
 
-/*Columns*/
-.columnBind {
+		/*Columns*/
+
+.separator {
 	padding: 0px 20px;
 }
-
-#largeColumn {
+#column-LEFT {
 	display: flex;
 	/*make it flow vertically*/
 	flex-direction: column;
@@ -60,52 +54,44 @@ header {
 	align-items: flex-start;
 	padding: 0px 20px;
 }
-
 #subColumn {
 	display: inline-flex;
 	flex-direction: column;
 	width: 630px;
 	border: 1px solid white;
 }
-
 .subColumnLEFT {
 	display: flex;
 	flex-direction: column;
 	max-width: 300px;
 	min-width: 300px;
 }
-
 .subColumnRIGHT {
 	display: flex;
   flex-direction: column;
   max-width: 300px;
 	min-width: 300px;
 }
-
 #mediumColumn {
 	display: flex;
 	flex-direction: column;
 	max-width: 300px;
 	min-width: 300px;
 }
-
 #smallColumn {
 	display: flex;
 	flex-direction: column;
 	max-width: 240px;
 	min-width: 240px;
 }
-
 #NewsBitesTitle {
 	font-size: 16px;
 	font-weight: bold;
 }
-
 #newsbites {
 	display: flex;
 	flex-direction: column;
 }
-
 .biteProps {
 	background-color: WhiteSmoke;
 	font-family: Verdana;
@@ -115,8 +101,6 @@ header {
 	padding: 10px 20px;
 
 }
-
-
 .story {
 	font-family: Georgia;
 	font-size: 17px;
@@ -125,44 +109,35 @@ header {
 
 
 
-/*IMAGES*/
+		/*IMAGES*/
 
 .imageProperties {
 	font-family: Georgia;
-  font-weight: bold;
-  color: white;
+  	font-weight: bold;
+  	color: white;
 }
-
-.picFontAlpha {
+.picFontTOP {
 	display: flex;
 	font-size: 40px;
 	justify-content: flex-start;
-
 }
-.picFontBeta {
+.picFont {
 	display: flex;
 	font-size: 30px;
 	justify-content: center;
 }
-
-
 #image1 {
-
-	/*because style.css is in a lower folder i think it needs an image properly sources, so ./resources/images doesn't exist starting from the style.css folder.... further investigation is needed*/
 	background-image: url(../images/img-story-main.png);
 	height: 300px;
 }
-
 #image2 {
 	background-image: url(../images/img-story-2.png);
 	height: 300px;
 }
-
 #image3 {
 	background-image: url(../images/img-story-3.png);
 	height: 300px;
 }
-
 #image4 {
 	background-image: url(../images/img-story-1.png);
 	height: 300px;
@@ -170,7 +145,7 @@ header {
 
 
 
-/*FOOTER*/
+		/*FOOTER*/
 
 #footer {
 	display: flex;
@@ -182,11 +157,9 @@ header {
 	font-size: 12px;
 	height: 600px;
 }
-
 #footerProp {
 	display: inline-flex;
 }
-
 .nav2 {
 	display: inline-flex;
 	color: black;
@@ -194,7 +167,6 @@ header {
 	padding: 0px 8px;
 	align-items: center;
 }
-
 .MYTimes {
 	font-family: Georgia;
 	font-size: 16px;
@@ -203,10 +175,8 @@ header {
 	padding: 15px;
 }
 
-#seriously {
-	display: flex;
-}
-/*debug container borders*/
+
+		/*debug*/
 .blocky {
 	border: 1px solid black;
 }
