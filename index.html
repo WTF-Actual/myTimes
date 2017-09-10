@@ -8,8 +8,9 @@
 
 <header>
 	<div id="logo">
-		<img id="logoIMG" src="./resources/css/images/img-myt-logo.jpg"/>
-		<p id="myTimes">My Times</p>
+		<img id="logoIMG" src="./resources/images/img-myt-logo.jpg"/>
+		<p id="myTimes">My Times
+		</p>
 	</div>
 	<div >
 		<nav>
@@ -25,10 +26,10 @@
 <div class="" id="Content">
 
 	<!--Left column-->
-	<div class="" id="largeColumn">
+	<div class="columnBind" id="largeColumn">
 
 		<!--Story 1-->
-			<div class="" id="image1" background="./resources/css/images/img-story-main.png">
+			<div class="" id="image1">
 				<h1 class="imageProperties coverFont"> Mother of Three Buys Tuna Steak at Phish Concert. Leaves, "Feeling Funny."
 				</h1>
 			</div>
@@ -36,76 +37,92 @@
 				MONUMENT VALLEY, AZ - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec nisl at augue dapibus dignissim. Nunc condimentum rutrum metus, ac eleifend lacus viverra nec. Proin ultrices egestas diam sed mollis. Nulla sapien massa, dictum vitae est et, pellentesque rutrum risus. Nunc volutpat, metus ac rutrum tempus, orci nisi porttitor dolor, sit amet luctus metus est ut mauris. Quisque vulputate nisl vitae massa rhoncus, at sagittis elit accumsan. Etiam tempus, lorem quis blandit imperdiet, enim dui lobortis tortor, sit amet lobortis arcu ex id odio. Nam fermentum nulla et eros bibendum, sed ullamcorper massa scelerisque. Vestibulum aliquet placerat leo a hendrerit. Nulla non sagittis neque. Nullam sit amet fringilla massa.
 			</p>
 
-			
-
-			<!--make a new dual column-->
-			<!--lesson on column splitting:
-			https://www.codecademy.com/en/courses/freelance1-u4/lessons/f1-u4-flexbox/exercises/nested-flex?program_content_id=bcb8c7f39a2745b30a99cbe97aab5659&program_id=540f932a8482dd52a34f25e44278e03b-->
-		<div class="leftSide">
 
 
 
+
+
+
+
+
+		<div class="blocky" id="subColumn">
+		<!--NOTE 1 (SEE BELOW) -->
 			<!--Story 2-->
-			<div class="story">
-				<h2 class="" id="headline2">Orca Spends Vacation at Land World Puget</h2>
-				<p class="">
-			PUGET, SO - Sed felis elit, faucibus et ipsum vel, vehicula ultrices purus. Sed congue odio vitae malesuada rhoncus. Integer vitae nisi pulvinar ante accumsan...</p>
-			</div>
-
-
-
-			<!--Story 3-->
-			<div id="image2">
-				<h2 class="imageProperties underFont">Earth Spins Backwards for 2017</h2>
-			</div>
-
-
-
-			<!--Story 4-->
-			<div>
-				<h2 class="" id="headline3">Burger for Breakfast: How Early is too Early?</h2>
-				<p class="">Mew York, MY—Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque id quam facilisis, ultrices ante ut, rutrum enim. Praesent eu nisl erat.
+			<div class="subColumnLEFT blocky">
+				<h2 class="blocky">Orca Spends Vacation at Land World Puget
+				</h2>
+				<p class="story blocky">PUGET, SO - Sed felis elit, faucibus et ipsum vel, vehicula ultrices purus. Sed congue odio vitae malesuada rhoncus. Integer vitae nisi pulvinar ante accumsan...
 				</p>
 			</div>
-
-
-
+			<!--Story 3-->
+			<div class="subColumnLEFT blocky" id="image2">
+				<h2 class="imageProperties underFont blocky">Earth Spins Backwards for 2017
+				</h2>
+			</div>
+			<!--Story 4-->
+			<div class="subColumnRIGHT blocky">
+				<h2  class=" blocky">Burger for Breakfast: How Early is too Early?
+				</h2>
+				<p class="story blocky">Mew York, MY—Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque id quam facilisis, ultrices ante ut, rutrum enim. Praesent eu nisl erat.
+				</p>
+			</div>
 			<!--Story 5-->
-			<div>
-				<h2 class="imageProperties underFont" id="image3">Research Shows Cameras Erase Memory</h2>
+			<div class="subColumnRIGHT blocky">
+				<h2 class="imageProperties underFont blocky" id="image3">Research Shows Cameras Erase Memory
+				</h2>
 			</div>
 		</div>
-
 	</div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!--Middle Column-->
-	<div class="" id="mediumColumn">
+	<div class="columnBind" id="mediumColumn">
 
 		<!--Story 1-->
 		<div>
-			<h2 class="">FBI Finds Action Star Guilty of False Advertising</h2>
-			<p class="story">WASHINGTON DC- Donec luctus sem augue, rutrum posuere orci aliquam sed. Nam vitae aliquam lectus. Sed tempor tortor est, nec sagittis eros tincidunt sed. Morbi venenatis condimentum sem, vitae sollicitudin turpis pulvinar eget. Morbi pellentesque consectetur mi id auctor. Phasellus tincidunt orci mauris, placerat pharetra urna fringilla vitae. Morbi eget rutrum urna. Cras condimentum augue ut ante sollicitudin interdum. Pellentesque cursus dolor at tincidunt cursus. Vestibulum blandit aliquam felis...</p>
+			<h2 class="">FBI Finds Action Star Guilty of False Advertising
+			</h2>
+			<p class="story">WASHINGTON DC- Donec luctus sem augue, rutrum posuere orci aliquam sed. Nam vitae aliquam lectus. Sed tempor tortor est, nec sagittis eros tincidunt sed. Morbi venenatis condimentum sem, vitae sollicitudin turpis pulvinar eget. Morbi pellentesque consectetur mi id auctor. Phasellus tincidunt orci mauris, placerat pharetra urna fringilla vitae. Morbi eget rutrum urna. Cras condimentum augue ut ante sollicitudin interdum. Pellentesque cursus dolor at tincidunt cursus. Vestibulum blandit aliquam felis...
+			</p>
 		</div>
 		
 		<!--Story 2-->
 		<div>
-			<p class="imageProperties underFont" id="image4">Cats in Control-Is It a Thing?</p>
+			<p class="imageProperties underFont" id="image4">Cats in Control-Is It a Thing?
+			</p>
 		</div>
 
 		<!--Story 3-->
 		<div>
-			<p class="story">BROOKLYN, NY- In molestie nulla sodales sit amet. Proin vulputate, ipsum porta aliquam commodo, nunc nibh tincidunt lorem, vel consectetur neque mi vel neque. Mauris ultricies, nulla scelerisque sollicitudin lobortis, dui est sodales sapien, a vestibulum velit diam eget felis. Vivamus dignissim lacinia dolor, quis commodo tellus pellentesque in.</p>
+			<p class="story">BROOKLYN, NY- In molestie nulla sodales sit amet. Proin vulputate, ipsum porta aliquam commodo, nunc nibh tincidunt lorem, vel consectetur neque mi vel neque. Mauris ultricies, nulla scelerisque sollicitudin lobortis, dui est sodales sapien, a vestibulum velit diam eget felis. Vivamus dignissim lacinia dolor, quis commodo tellus pellentesque in.
+			</p>
 		</div>
 	</div>
 
 <!--Right Column-->
-	<div class="" id="smallColumn">
+	<div class="columnBind" id="smallColumn">
 
 		<!--Story 1-->
 		<div>
 		<img src="./resources/images/img-news-bite.png">
-			<h3 class="">NEWS BITES</h3>
-			<p class="">Cat Emoji Goes Viral Buy Youtube Views Home Business Advertising Ideas Advertising Internet Online Illustration in Marketing Materials Finally a Top Secret Way You Can</p>
+			<h3 class="">NEWS BITES
+			</h3>
+			<p class="">Cat Emoji Goes Viral Buy Youtube Views Home Business Advertising Ideas Advertising Internet Online Illustration in Marketing Materials Finally a Top Secret Way You Can
+			</p>
 		</div>
 		
 	</div>
@@ -114,3 +131,14 @@
 
 </body>
 </html>
+
+
+
+
+
+
+<!--
+NOTE 1: 
+lesson on column splitting:
+https://www.codecademy.com/en/courses/freelance1-u4/lessons/f1-u4-flexbox/exercises/nested-flex?program_content_id=bcb8c7f39a2745b30a99cbe97aab5659&program_id=540f932a8482dd52a34f25e44278e03b
+-->
